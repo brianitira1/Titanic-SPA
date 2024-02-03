@@ -27,6 +27,33 @@ const ServicesPage = () => {
           className="img-fluid hero-image"
         />
         <div className="overlay-services"></div>
+
+        <div className="container mt-5" id="services">
+          <div className="row">
+            <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
+              <div className="card bg-transparent">
+                <div className="card-body">
+                <img src={servicesimage} alt="Services" className="img-fluid" />
+                  <h5 className="card-title text-white">beauty</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
+              <div className="card bg-transparent">
+                <div className="card-body">
+                  <h5 className="card-title text-white">Massage</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
+              <div className="card bg-transparent">
+                <div className="card-body">
+                  <h5 className="card-title text-white">Wellness</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
