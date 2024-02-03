@@ -8,6 +8,7 @@ const Hero = () => {
 
   const handleBookNowClick = () => {
     clerk.openSignIn();
+    clerk.openSignUp();
   };
 
   return (
