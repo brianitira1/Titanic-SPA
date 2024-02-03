@@ -1,6 +1,8 @@
+import React from "react";
+
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top container">
       <div className="container">
         <a className="navbar-brand" href="#">
           Titanic SPA
@@ -17,8 +19,8 @@ const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            {/* You should put list items in here */}
+          <ul className="navbar-nav ml-auto">
+            {/* Your list items go here */}
           </ul>
         </div>
       </div>
