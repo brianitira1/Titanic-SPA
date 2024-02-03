@@ -24,7 +24,7 @@
     0,
     0,
     0.5
-  ); /* Adjust opacity (last value) to control darkness */
+  ); 
 }
 
 .hero-content {
@@ -32,7 +32,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1; /* Ensure text is on top of overlay */
-  text-align: center; /* Center align text */
-  color: white; /* Text color */
+  z-index: 1; 
+  text-align: center; 
+  color: white; 
 }

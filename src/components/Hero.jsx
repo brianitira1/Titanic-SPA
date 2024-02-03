@@ -1,5 +1,3 @@
-// Hero.jsx
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import heroImage from "../assets/images/heroimage.jpg";
@@ -13,25 +11,29 @@ const Hero = () => {
   const [showCustomForm, setShowCustomForm] = useState(false);
 
   const handleDashboardClick = () => {
-    console.log("Dashboard button clicked");
     setShowCustomForm(true);
-    console.log("showCustomForm:", showCustomForm);
   };
-  
-  
 
   const handleCloseCustomForm = () => {
     setShowCustomForm(false);
   };
 
-  const handleBookNowClick = () => {
-    clerk.openSignIn();
+  const handleBookNowClick = async () => {
+    try {
+      await clerk.openSignIn();
+      const user = clerk.user;
+      if (user) {
+        navigate("/services");
+      }
+    } catch (error) {
+      console.error("Error signing in:", error);
+    }
   };
 
   return (
     <div className="hero-container">
       <img src={heroImage} alt="Hero Image" className="img-fluid hero-image" />
-      <div className="overlay"></div> {/* Dark overlay */}
+      <div className="overlay"></div> 
       <motion.div
         className="hero-content"
         style={{
