@@ -3,11 +3,20 @@ import { motion } from "framer-motion";
 import heroImage from "../assets/images/heroimage.jpg";
 import { useClerk } from "@clerk/clerk-react";
 
+import { useNavigate } from "react-router-dom";
+
 const Hero = () => {
   const clerk = useClerk();
+  const navigate = useNavigate();
 
-  const handleBookNowClick = () => {
-    clerk.openSignIn();
+  const handleBookNowClick = async () => {
+    try {
+      await clerk.openSignIn();
+      // Redirect to AdminDashboardPage after successful sign-in
+      navigate("/admin-dashboard");
+    } catch (error) {
+      console.error("Error signing in:", error);
+    }
   };
 
   return (
