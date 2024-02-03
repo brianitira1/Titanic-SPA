@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 
 import "../styles/Hero.css";
 import "../styles/NavBar.css";
+import "../styles/CustomForm.css";
 
 const Home = () => {
   return (
