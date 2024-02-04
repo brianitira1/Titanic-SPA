@@ -1,6 +1,6 @@
+import React from "react";
 import NavBar from "../components/NavBar";
-
-import "../styles/Beauty.css";
+import "../styles/BeautyPage.css";
 
 const Beauty = () => {
   return (

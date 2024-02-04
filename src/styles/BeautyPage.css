@@ -1,0 +1,6 @@
+#beauty-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  top: 50px;
+}
