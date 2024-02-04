@@ -18,10 +18,26 @@ const NavBar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            {/* Your list items go here */}
-          </ul>
+        <div className="collapse navbar-collapse custom-nav" id="navbarNav">
+          <div className="ml-auto">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#social-media">
+                  Social Media
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#services">
+                  Services
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
