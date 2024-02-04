@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import NavBar from "../components/NavBar";
 import servicesimage from "../assets/images/servicesimage.jpg";
+import massageimage  from "../assets/images/massageimage.jpg";
+import wellnessimage from "../assets/images/wellnessimage.jpg";
+import beautyimage  from "../assets/images/beautyimage.jpg";
 import "../styles/ServicesPage.css";
 
 const ServicesPage = () => {
@@ -32,24 +35,38 @@ const ServicesPage = () => {
           <div className="row">
             <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
               <div className="card bg-transparent">
-                <div className="card-body">
-                <img src={servicesimage} alt="Services" className="img-fluid" />
+                <motion.div
+                 initial={{ opacity: 0 }}
+                 animate={{ opacity: 1 }}
+                 transition={{ duration: 1, delay: 1 }}
+                 className="card-body">
+                <img src={beautyimage} alt="Services" className="img-fluid" />
                   <h5 className="card-title text-white">beauty</h5>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
               <div className="card bg-transparent">
-                <div className="card-body">
+                <motion.div
+                 initial={{ opacity: 0 }}
+                 animate={{ opacity: 1 }}
+                 transition={{ duration: 1, delay: 1 }}
+                 className="card-body">
+                <img src={massageimage} alt="Services" className="img-fluid" />
                   <h5 className="card-title text-white">Massage</h5>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
               <div className="card bg-transparent">
-                <div className="card-body">
+                <motion.div 
+                 initial={{ opacity: 0 }}
+                 animate={{ opacity: 1 }}
+                 transition={{ duration: 1, delay: 1 }}
+                className="card-body">
+                <img src={wellnessimage} alt="Services" className="img-fluid" />
                   <h5 className="card-title text-white">Wellness</h5>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
