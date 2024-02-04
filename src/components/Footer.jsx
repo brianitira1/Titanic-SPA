@@ -1,7 +1,7 @@
-// Footer.js
 import React from "react";
 import { motion } from "framer-motion";
-import "../styles/Footer.css"; // Import CSS file
+
+import "../styles/Footer.css";
 
 const Footer = () => {
   // Variants for animation
