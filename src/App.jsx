@@ -9,6 +9,7 @@ import ServicesPage from "./components/ServicesPage";
 import Massage from "./components/Massage";
 import Beauty from "./components/Beauty";
 import Wellness from "./components/Wellness";
+import Footer from "./components/Footer";
 
 const app = () => {
   return (
@@ -21,6 +22,7 @@ const app = () => {
         <Route path="/massage" element={<Massage />} />
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/wellness" element={<Wellness />} />
+        <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>
   );

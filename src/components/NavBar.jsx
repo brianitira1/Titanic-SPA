@@ -16,6 +16,10 @@ const NavBar = () => {
       console.log(error);
     }
   };
+
+  const handleFooterNavigation = () => {
+    navigate("/footer");
+  };
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top container">
       <div className="container">
@@ -42,7 +46,11 @@ const NavBar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#social-media">
+                <a
+                  className="nav-link"
+                  href="#social-media"
+                  onClick={handleFooterNavigation}
+                >
                   Social Media
                 </a>
               </li>
