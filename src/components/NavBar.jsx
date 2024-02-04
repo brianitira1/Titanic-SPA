@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useClerk } from "@clerk/clerk-react";
 
-const NavBar = () => {
+const NavBar = ({ scrollToFooter }) => {
   const navigate = useNavigate();
   const clerk = useClerk();
 
@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   const handleFooterNavigation = () => {
-    navigate("/footer");
+    scrollToFooter();
   };
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top container">

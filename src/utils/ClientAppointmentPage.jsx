@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import supabase from "../databases/supabase";
 
+import "../styles/AppointmentForm.css";
+
 const ClientAppointmentPage = () => {
   const [formData, setFormData] = useState({
     firstname: "",
@@ -51,7 +53,7 @@ const ClientAppointmentPage = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" id="appointment-form">
       <h1 className="mb-4">Book an Appointment</h1>
       <form onSubmit={handleSubmit}>
         <div className="row mb-3">
