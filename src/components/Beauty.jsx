@@ -2,6 +2,8 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import "../styles/BeautyPage.css";
 
+//import AdminDashBoardPage from "../components/AdminDashBoardPage";
+
 const Beauty = () => {
   return (
     <>
