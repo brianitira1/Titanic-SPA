@@ -8,8 +8,22 @@ import wellnessimage from "../assets/images/wellnessimage.jpg";
 import beautyimage from "../assets/images/beautyimage.jpg";
 import "../styles/ServicesPage.css";
 
+import { useNavigate } from "react-router-dom";
+
 const ServicesPage = () => {
+  const navigate = useNavigate();
+
   const prices = ["Ksh 50000", "Ksh 10000", "Ksh 20000"];
+
+  const handleServiceClick = (service) => {
+    if (service === "massage") {
+      navigate("/massage");
+    } else if (service === "beauty") {
+      navigate("/beauty");
+    } else if (service === "wellness") {
+      navigate("/wellness");
+    }
+  };
 
   return (
     <>
@@ -38,7 +52,10 @@ const ServicesPage = () => {
           <div className="row">
             {/* Beauty Service Card */}
             <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-              <div className="card bg-transparent">
+              <div
+                className="card bg-transparent"
+                onClick={() => handleServiceClick("beauty")}
+              >
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -59,7 +76,10 @@ const ServicesPage = () => {
             </div>
             {/* Massage Service Card */}
             <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-              <div className="card bg-transparent">
+              <div
+                className="card bg-transparent"
+                onClick={() => handleServiceClick("massage")}
+              >
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -79,7 +99,10 @@ const ServicesPage = () => {
             </div>
             {/* Wellness Service Card */}
             <div className="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-              <div className="card bg-transparent">
+              <div
+                className="card bg-transparent"
+                onClick={() => handleServiceClick("wellness")}
+              >
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
