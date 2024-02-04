@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import NavBar from "../components/NavBar";
-import PriceBadge from "../utils/PriceBadge"; // Import the PriceBadge component
+import PriceBadge from "../utils/PriceBadge";
 import servicesimage from "../assets/images/servicesimage.jpg";
 import massageimage from "../assets/images/massageimage.jpg";
 import wellnessimage from "../assets/images/wellnessimage.jpg";

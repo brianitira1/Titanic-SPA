@@ -1,0 +1,11 @@
+/* For Firefox */
+@-moz-document url-prefix() {
+  body {
+    scrollbar-width: none;
+  }
+}
+
+/* For WebKit-based browsers like Chrome */
+body::-webkit-scrollbar {
+  display: none;
+}
