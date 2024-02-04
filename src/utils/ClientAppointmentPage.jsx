@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { createClient } from "@supabase/supabase-js";
-
-const supabase = createClient("YOUR_SUPABASE_URL", "YOUR_SUPABASE_KEY");
+import supabase from "../databases/supabase";
 
 const ClientAppointmentPage = () => {
   const [formData, setFormData] = useState({
@@ -17,9 +15,11 @@ const ClientAppointmentPage = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    // Special handling for age field to ensure it's a valid integer
+    const parsedValue = name === "age" ? parseInt(value, 10) || "" : value;
     setFormData((prevState) => ({
       ...prevState,
-      [name]: value,
+      [name]: parsedValue,
     }));
   };
 
@@ -109,6 +109,17 @@ const ClientAppointmentPage = () => {
             className="form-control"
             name="email"
             value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Age:</label>
+          <input
+            type="number"
+            className="form-control"
+            name="age"
+            value={formData.age}
             onChange={handleChange}
             required
           />

@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import "../styles/BeautyPage.css";
 
-//import AdminDashBoardPage from "../components/AdminDashBoardPage";
+import ClientAppointmentPage from "../utils/ClientAppointmentPage";
 
 const Beauty = () => {
   return (
@@ -10,6 +10,7 @@ const Beauty = () => {
       <NavBar />
       <div className="container" id="beauty-container">
         <h1>Beauty</h1>
+        <ClientAppointmentPage />
       </div>
     </>
   );
