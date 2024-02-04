@@ -7,6 +7,7 @@ import wellnessimage from "../assets/images/wellnessimage.jpg";
 import beautyimage  from "../assets/images/beautyimage.jpg";
 import "../styles/ServicesPage.css";
 
+
 const ServicesPage = () => {
   return (
     <>
@@ -67,11 +68,13 @@ const ServicesPage = () => {
                 <img src={wellnessimage} alt="Services" className="img-fluid" />
                   <h5 className="card-title text-white">Wellness</h5>
                 </motion.div>
+       
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </>
   );
 };
