@@ -1,19 +1,46 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  // Variants for animation
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <footer className="footer bg-dark text-white py-5">
+    <motion.footer
+      className="footer bg-dark text-white py-5"
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+    >
       <div className="container">
-        <div className="row">
-          <div className="col-lg-4 mb-4 mb-lg-0">
+        <motion.div
+          className="row"
+          initial="hidden"
+          animate="visible"
+          variants={variants}
+        >
+          <motion.div
+            className="col-lg-4 mb-4 mb-lg-0"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
             <h5 className="mb-3">About Titanic SPA</h5>
             <p>
               Titanic SPA is a luxurious retreat inspired by the grandeur of the
               legendary ship. Unwind and rejuvenate in our state-of-the-art
               facilities.
             </p>
-          </div>
-          <div className="col-lg-4 mb-4 mb-lg-0">
+          </motion.div>
+          <motion.div
+            className="col-lg-4 mb-4 mb-lg-0"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
             <h5 className="mb-3">Connect with Us</h5>
             <ul className="list-unstyled">
               <li>
@@ -26,22 +53,47 @@ const Footer = () => {
                 <i className="fab fa-instagram"></i> Instagram
               </li>
             </ul>
-          </div>
-          <div className="col-lg-4">
+          </motion.div>
+          <motion.div
+            className="col-lg-4"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
             <h5 className="mb-3">Contact Us</h5>
             <p>Email: info@titanicspa.com</p>
             <p>Phone: +1 (123) 456-7890</p>
-          </div>
-        </div>
-        <hr className="border-light" />
-        <div className="row">
-          <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          </motion.div>
+        </motion.div>
+        <motion.hr
+          className="border-light"
+          initial="hidden"
+          animate="visible"
+          variants={variants}
+        />
+        <motion.div
+          className="row"
+          initial="hidden"
+          animate="visible"
+          variants={variants}
+        >
+          <motion.div
+            className="col-md-6 text-center text-md-left mb-3 mb-md-0"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
             <p>
               &copy; {new Date().getFullYear()} Titanic SPA. All rights
               reserved.
             </p>
-          </div>
-          <div className="col-md-6 text-center text-md-right">
+          </motion.div>
+          <motion.div
+            className="col-md-6 text-center text-md-right"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
             <ul className="list-inline">
               <li className="list-inline-item">
                 <a href="#">Privacy Policy</a>
@@ -50,10 +102,10 @@ const Footer = () => {
                 <a href="#">Terms of Service</a>
               </li>
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

@@ -1,0 +1,12 @@
+.about-section {
+  height: 100vh;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-content .col-md-6 {
+  padding: 0 15px; /* Adjust padding as needed */
+}

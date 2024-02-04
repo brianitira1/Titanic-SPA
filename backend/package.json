@@ -13,6 +13,7 @@
     "axios": "^1.6.7",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "react-intersection-observer": "^9.6.0"
   }
 }
