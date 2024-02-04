@@ -1,5 +1,7 @@
+// Footer.js
 import React from "react";
 import { motion } from "framer-motion";
+import "../styles/Footer.css"; // Import CSS file
 
 const Footer = () => {
   // Variants for animation
@@ -10,12 +12,12 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="footer bg-dark text-white py-5"
+      className="custom-footer py-5"
       initial="hidden"
       animate="visible"
       variants={variants}
     >
-      <div className="container">
+      <div className="container footer-content">
         <motion.div
           className="row"
           initial="hidden"

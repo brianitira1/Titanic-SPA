@@ -7,7 +7,7 @@ import CustomForm from "../components/CustomForm";
 
 const Hero = () => {
   const clerk = useClerk();
-  const navigate = useNavigate(); // Hook from React Router
+  const navigate = useNavigate();
   const [showCustomForm, setShowCustomForm] = useState(false);
 
   const handleDashboardClick = () => {
