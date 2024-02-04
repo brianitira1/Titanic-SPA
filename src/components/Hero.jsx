@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <img src={heroImage} alt="Hero Image" className="img-fluid hero-image" />
-      <div className="overlay"></div> 
+      <div className="overlay"></div>
       <motion.div
         className="hero-content"
         style={{
@@ -84,7 +84,7 @@ const Hero = () => {
           </motion.button>
         </div>
       </motion.div>
-      
+
       {showCustomForm && <CustomForm onClose={handleCloseCustomForm} />}
     </div>
   );

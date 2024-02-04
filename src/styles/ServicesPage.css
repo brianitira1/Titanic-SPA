@@ -32,7 +32,6 @@
   transform: translate(-50%, -50%);
   z-index: 2;
   text-align: center;
- 
 }
 
 .services-item {
@@ -41,7 +40,15 @@
 }
 
 .card-body {
-  background-color: rgba(0, 0, 0, 0.7); 
-  height: 100%; 
-  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  padding: 10px;
+}
+
+#service:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
