@@ -1,8 +1,25 @@
+import React from "react";
+import NavBar from "../components/NavBar";
+import "../styles/BeautyPage.css";
+
+import wellnessbg from "../assets/images/wellnessbg.jpg";
+
+import ClientAppointmentPage from "../utils/ClientAppointmentPage";
+
 const Wellness = () => {
   return (
-    <div>
-      <h1>Wellness</h1>
-    </div>
+    <>
+      <NavBar />
+      <div className=" hero-container " id="beauty-container">
+        <img
+          src={wellnessbg}
+          alt="Hero Image"
+          className="img-fluid hero-image"
+        />
+        <div className="overlay-form"></div>
+        <ClientAppointmentPage />
+      </div>
+    </>
   );
 };
 
